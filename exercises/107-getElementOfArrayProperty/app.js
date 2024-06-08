@@ -1,5 +1,9 @@
 function getElementOfArrayProperty(obj, key, index) {
-    // your code here
+    if(!Array.isArray( obj[key]))return undefined;
+    if(obj[key].length === 0)return undefined;
+    let arr = obj[key];
+ 
+    return arr[index];
 
 }
 
