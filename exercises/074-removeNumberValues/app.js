@@ -1,5 +1,9 @@
 function removeNumberValues(obj) {
-    // your code here
+   for (const key in obj){
+    if(Number.isInteger(obj[key])){
+        delete obj[key];
+    }
+   }
     
 }
 
