@@ -1,6 +1,6 @@
 function squareElements(arr) {
-  // your code here
-  
+  const arr2 = arr.map((value)=>Math.pow(value, 2));
+  return arr2;
 }
 
 let output = squareElements([1, 2, 3]);
