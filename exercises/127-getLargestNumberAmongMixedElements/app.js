@@ -1,5 +1,23 @@
 function getLargestNumberAmongMixedElements(arr) {
-    // your code here
+    let largest;
+    for(let i = 0; i < arr.length; i++){
+
+        if(Number.isInteger(arr[i])){
+
+            if(largest != null){
+                if(arr[i] > largest){
+                  largest = arr[i];
+                }
+            }else{
+              largest = arr[i];
+            }
+        }
+    }
+
+    if(largest == null)
+        largest = 0;
+
+    return largest;
     
 }
 

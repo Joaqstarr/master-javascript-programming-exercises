@@ -1,5 +1,20 @@
 function findSmallestNumberAmongMixedElements(arr) {
-  // your code here
+  
+  let smallest;
+  for(let i = 0; i < arr.length; i++){
+      if(Number.isInteger(arr[i])){
+          if(smallest != null){
+              if(arr[i] < smallest){
+                smallest = arr[i];
+              }
+          }else{
+            smallest = arr[i];
+          }
+      }
+  }    
+  if(smallest == null)
+    smallest = 0;
+  return smallest;
   
 }
 
